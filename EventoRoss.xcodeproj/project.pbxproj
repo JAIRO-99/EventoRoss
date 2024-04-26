@@ -7,18 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D718D8122BD9AFFD00553846 /* EventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8112BD9AFFD00553846 /* EventoModel.swift */; };
+		D718D8142BD9BDD900553846 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8132BD9BDD900553846 /* ProductCardView.swift */; };
+		D718D8172BD9D07100553846 /* ItemDetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8162BD9D07100553846 /* ItemDetailViews.swift */; };
+		D718D8192BD9EB4900553846 /* FavoritiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8182BD9EB4900553846 /* FavoritiesView.swift */; };
+		D718D81B2BD9EFD600553846 /* EventoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D81A2BD9EFD600553846 /* EventoViewModel.swift */; };
+		D718D81D2BD9F1D100553846 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D81C2BD9F1D100553846 /* CarView.swift */; };
+		D718D81F2BDA105900553846 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D81E2BDA105900553846 /* TabBar.swift */; };
+		D718D8222BDA108000553846 /* CategoriesView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8212BDA108000553846 /* CategoriesView1.swift */; };
+		D718D8242BDA10AF00553846 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8232BDA10AF00553846 /* FavoritesView.swift */; };
+		D718D8262BDA10BD00553846 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8252BDA10BD00553846 /* UserView.swift */; };
+		D718D82B2BDA250F00553846 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D82A2BDA250F00553846 /* EventList.swift */; };
+		D7C01D2E2BC9C0AD00A948C4 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C01D2C2BC9C0AD00A948C4 /* PlayfairDisplay-Bold.ttf */; };
+		D7C01D2F2BC9C0AD00A948C4 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C01D2D2BC9C0AD00A948C4 /* PlayfairDisplay-Regular.ttf */; };
 		D7D24AB92BC909B80002158A /* EventoRossApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D24AB82BC909B80002158A /* EventoRossApp.swift */; };
 		D7D24ABB2BC909B80002158A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D24ABA2BC909B80002158A /* ContentView.swift */; };
 		D7D24ABD2BC909BA0002158A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D24ABC2BC909BA0002158A /* Assets.xcassets */; };
 		D7D24AC02BC909BA0002158A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D24ABF2BC909BA0002158A /* Preview Assets.xcassets */; };
+		D7D722252BCA073900262F76 /* HomeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D722242BCA073900262F76 /* HomeViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D718D8112BD9AFFD00553846 /* EventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoModel.swift; sourceTree = "<group>"; };
+		D718D8132BD9BDD900553846 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		D718D8162BD9D07100553846 /* ItemDetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViews.swift; sourceTree = "<group>"; };
+		D718D8182BD9EB4900553846 /* FavoritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritiesView.swift; sourceTree = "<group>"; };
+		D718D81A2BD9EFD600553846 /* EventoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoViewModel.swift; sourceTree = "<group>"; };
+		D718D81C2BD9F1D100553846 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		D718D81E2BDA105900553846 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D718D8212BDA108000553846 /* CategoriesView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView1.swift; sourceTree = "<group>"; };
+		D718D8232BDA10AF00553846 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		D718D8252BDA10BD00553846 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D718D82A2BDA250F00553846 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		D7C01D2C2BC9C0AD00A948C4 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Bold.ttf"; path = "../../../../Downloads/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		D7C01D2D2BC9C0AD00A948C4 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Regular.ttf"; path = "../../../../Downloads/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		D7C01D302BC9C11000A948C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D7D24AB52BC909B80002158A /* EventoRoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventoRoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D24AB82BC909B80002158A /* EventoRossApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoRossApp.swift; sourceTree = "<group>"; };
 		D7D24ABA2BC909B80002158A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7D24ABC2BC909BA0002158A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7D24ABF2BC909BA0002158A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7D722242BCA073900262F76 /* HomeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +61,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D718D8152BD9CDE900553846 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D718D8162BD9D07100553846 /* ItemDetailViews.swift */,
+				D718D8132BD9BDD900553846 /* ProductCardView.swift */,
+				D718D8182BD9EB4900553846 /* FavoritiesView.swift */,
+				D718D81C2BD9F1D100553846 /* CarView.swift */,
+				D718D82A2BDA250F00553846 /* EventList.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		D718D8202BDA106200553846 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D7D24ABA2BC909B80002158A /* ContentView.swift */,
+				D718D81E2BDA105900553846 /* TabBar.swift */,
+				D7D722242BCA073900262F76 /* HomeViews.swift */,
+				D718D8212BDA108000553846 /* CategoriesView1.swift */,
+				D718D8232BDA10AF00553846 /* FavoritesView.swift */,
+				D718D8252BDA10BD00553846 /* UserView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D718D8272BDA10CA00553846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D718D8112BD9AFFD00553846 /* EventoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D718D8282BDA10D700553846 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D718D81A2BD9EFD600553846 /* EventoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D718D8292BDA10EC00553846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D718D8202BDA106200553846 /* Main */,
+				D718D8152BD9CDE900553846 /* Details */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D7D24AAC2BC909B80002158A = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +130,14 @@
 		D7D24AB72BC909B80002158A /* EventoRoss */ = {
 			isa = PBXGroup;
 			children = (
+				D7C01D302BC9C11000A948C4 /* Info.plist */,
 				D7D24AB82BC909B80002158A /* EventoRossApp.swift */,
-				D7D24ABA2BC909B80002158A /* ContentView.swift */,
+				D718D8292BDA10EC00553846 /* Views */,
+				D718D8272BDA10CA00553846 /* Model */,
+				D718D8282BDA10D700553846 /* ViewModel */,
 				D7D24ABC2BC909BA0002158A /* Assets.xcassets */,
+				D7C01D2C2BC9C0AD00A948C4 /* PlayfairDisplay-Bold.ttf */,
+				D7C01D2D2BC9C0AD00A948C4 /* PlayfairDisplay-Regular.ttf */,
 				D7D24ABE2BC909BA0002158A /* Preview Content */,
 			);
 			path = EventoRoss;
@@ -125,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C01D2F2BC9C0AD00A948C4 /* PlayfairDisplay-Regular.ttf in Resources */,
+				D7C01D2E2BC9C0AD00A948C4 /* PlayfairDisplay-Bold.ttf in Resources */,
 				D7D24AC02BC909BA0002158A /* Preview Assets.xcassets in Resources */,
 				D7D24ABD2BC909BA0002158A /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +223,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D718D82B2BDA250F00553846 /* EventList.swift in Sources */,
+				D718D8142BD9BDD900553846 /* ProductCardView.swift in Sources */,
+				D718D81D2BD9F1D100553846 /* CarView.swift in Sources */,
+				D718D8242BDA10AF00553846 /* FavoritesView.swift in Sources */,
+				D718D8122BD9AFFD00553846 /* EventoModel.swift in Sources */,
+				D718D81B2BD9EFD600553846 /* EventoViewModel.swift in Sources */,
 				D7D24ABB2BC909B80002158A /* ContentView.swift in Sources */,
 				D7D24AB92BC909B80002158A /* EventoRossApp.swift in Sources */,
+				D718D8172BD9D07100553846 /* ItemDetailViews.swift in Sources */,
+				D718D8222BDA108000553846 /* CategoriesView1.swift in Sources */,
+				D718D81F2BDA105900553846 /* TabBar.swift in Sources */,
+				D718D8192BD9EB4900553846 /* FavoritiesView.swift in Sources */,
+				D7D722252BCA073900262F76 /* HomeViews.swift in Sources */,
+				D718D8262BDA10BD00553846 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +373,7 @@
 				DEVELOPMENT_TEAM = NY24Z9G667;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventoRoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +403,7 @@
 				DEVELOPMENT_TEAM = NY24Z9G667;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EventoRoss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

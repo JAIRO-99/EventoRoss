@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct EventoRossApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+               
         }
     }
 }
