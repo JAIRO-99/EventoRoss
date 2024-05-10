@@ -51,7 +51,7 @@ struct ItemDetailViews: View {
                                 Text("Categoria:  \(itemProducts.category)")
                                     .padding(.horizontal)
                             }
-                            Text(itemProducts.description)
+                            Text(itemProducts.descriptions)
                                 .lineSpacing(8.0)
                                 .opacity(0.6)
                                 .padding(.horizontal)

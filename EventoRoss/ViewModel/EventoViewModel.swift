@@ -7,27 +7,33 @@
 
 import Foundation
 import SwiftUI
+import SwiftData
 
-class EventoViewModel: ObservableObject{
+@Observable
+final class EventoViewModel: ObservableObject{
     
-    @Published private (set)var eventos: [EventoModel] = []
-    @Published var totalPrice = 0.0
     
-    init(){
-       // eventos = EventoModel.all
-    }
+    
+     private (set)var eventos: [EventoModel] = []
+     private (set)var totalPrice = 0.0
+    
+   
+    
     
     func addCart(item: EventoModel){
         eventos.append(item)
         totalPrice += item.precio
     }
     
-    func deleteItem(id: EventoModel){
-        eventos = eventos.filter{$0.id != id.id}
+    func deleteItem(product: EventoModel){
+        eventos = eventos.filter{$0.id != product.id}
        // eventos.removeAll(where: {$0.id == id})
-        totalPrice -= id.precio
+        totalPrice -= product.precio
     }
-    func favorites (favorite: Binding <EventoModel> ){
-        favorite.wrappedValue.favorites = !favorite.wrappedValue.favorites
+    func favoritesValue (favorite: Binding<EventoModel> ){
+        
+        
+     //   favorite.wrappedValue.favorites = !favorite.wrappedValue.favorites
     }
 }
+

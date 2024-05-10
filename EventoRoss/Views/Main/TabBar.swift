@@ -21,11 +21,11 @@ struct TabBar: View {
                         Label("Categories", systemImage: "square.fill.text.grid.1x2")
                     }
             
-            FavoritesView()
+            CarItemView()
                 .navigationTitle("Mis Favoritos")
                 .environmentObject(viewModel)
                 .tabItem {
-                    Label("Favoritos", systemImage: "heart")
+                    Label("Carrito", systemImage: "cart")
                 }
                 
                 

@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct FavoritesView: View {
+struct CarItemView: View {
     @EnvironmentObject var viewModel: EventoViewModel
     
     var body: some View {
        
-        FavoritiesView()
+        CarProductsView()
             .environmentObject(viewModel)
     }
 }
 
 #Preview {
-    FavoritesView()
+    CarItemView()
         .environmentObject(EventoViewModel())
 }

@@ -14,7 +14,7 @@ struct ProductCardView: View {
     @State private var favorites = false
     var body: some View {
         VStack {
-            ZStack(alignment: .topLeading){
+            ZStack(alignment: .topTrailing){
                 ZStack(alignment: .bottom){
                     Image(product.image)
                         .resizable()
@@ -46,14 +46,13 @@ struct ProductCardView: View {
                 }
                     Button{
                         viewModel.addCart(item: product)
-                        viewModel.favorites(favorite: $product)
-                       
                     }label: {
-                        Image(systemName: product.favorites ? "heart.fill" : "heart")
+                        Image(systemName: "cart")
                             .padding()
-                            .foregroundColor(.red)
-                            .background(.white)
-                            .cornerRadius(10)
+                            .foregroundColor(.blue)
+                            .background(Color(red: 100.937, green: 0.937, blue: 0.937))
+                            .clipShape(Circle())
+                            .bold()
                     }
                     .padding(10)
             }

@@ -12,7 +12,7 @@ struct CarView: View {
     var products: EventoModel
     var body: some View {
             
-        HStack(spacing: 20){
+        HStack(spacing: 15){
             Image(products.image)
                 .resizable()
                 .scaledToFit()
@@ -28,15 +28,20 @@ struct CarView: View {
             }
             
             Spacer()
-            
-            Button{
-                viewModel.deleteItem(id: products)
-            }label:{
-                Image(systemName: "trash")
+            Divider()
+        
+            Image(systemName: "trash")
                     .foregroundColor(.red)
                     .font(.title2)
-            }
+                    .onTapGesture {
+                        viewModel.deleteItem(product: products)
+                    }
+            
         }
+        .padding(.horizontal)
+       // .background(.white)
+        .cornerRadius(12)
+        .frame(width: .infinity)
         .padding()
     }
 }

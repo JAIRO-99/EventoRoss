@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct FavoritiesView: View {
+struct CarProductsView: View {
     @EnvironmentObject var viewModel: EventoViewModel
- 
+    
     var body: some View {
         
         NavigationView {
@@ -17,33 +17,33 @@ struct FavoritiesView: View {
                 Color(red: 100.937, green: 0.937, blue: 0.937)
                     .edgesIgnoringSafeArea(.all)
             ScrollView{
+                
                 if viewModel.eventos.count > 0 {
-                   
-                        ForEach(viewModel.eventos, id: \.id){ products in
-                            CarView(products: products)
+                    
+                    ForEach(viewModel.eventos, id: \.id){ products in
+                        CarView(products: products)
                     }
-                   
+                    
                     HStack{
-                        Text("Tu total es: ")
+                        Text("Su precio total es:  ")
                             .font(.headline)
                         Spacer()
                         
-                        Text("$ \(viewModel.totalPrice, specifier: "%.2f")")
+                        Text("\(viewModel.totalPrice, specifier: "%.2f")")
                             .font(.headline)
                     }
                     .padding()
                     .frame(maxWidth: .infinity)
                     .frame(height: 40)
                     .background(.brown.opacity(0.3))
-                    .cornerRadius(20, corners: .topLeft)
-                    .cornerRadius(20, corners: .bottomRight)
-                    .padding()
+                    
+                
                 }else{
                     Spacer()
                     Spacer()
                     VStack(){
                         
-                        Text("Aún no tienes favoritos")
+                        Text("Aún no tienes productos")
                             .bold()
                     }
                     .padding()
@@ -57,11 +57,11 @@ struct FavoritiesView: View {
             }
             
             }
-            .navigationTitle("Mis Favoritos")
+            .navigationTitle("Carrito")
         }
         }
 }
 #Preview {
-    FavoritiesView()
+    CarProductsView()
         .environmentObject(EventoViewModel())
 }
