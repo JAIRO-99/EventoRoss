@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
-    @EnvironmentObject var viewModel: EventoViewModel
+   @EnvironmentObject var viewModel: EventoViewModel
     var body: some View {
         TabView{
             HomeViews()

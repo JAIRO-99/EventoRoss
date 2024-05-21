@@ -60,6 +60,8 @@ struct HomeViews: View {
                         .foregroundColor(.brown)
                         .padding()
                         
+                        // Desde aquí hasta
+                        
                         HStack{
                             Image(systemName: "magnifyingglass")
                             
@@ -71,6 +73,8 @@ struct HomeViews: View {
                                 .stroke(lineWidth: 1)
                         )
                         .padding()
+                        
+                        
                         
                         
                         ScrollView(.horizontal, showsIndicators: false){
@@ -85,6 +89,8 @@ struct HomeViews: View {
                             .padding()
                         }
                         
+                        SlidersView()
+                        // HASTA AQUI PARA CAMBIAR
                         
                         VStack(alignment: .leading){
                             Text("Popular")

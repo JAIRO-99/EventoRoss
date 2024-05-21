@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7166B2D2BF59F21004C1357 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7166B2C2BF59F21004C1357 /* SlidersView.swift */; };
 		D718D8122BD9AFFD00553846 /* EventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8112BD9AFFD00553846 /* EventoModel.swift */; };
 		D718D8142BD9BDD900553846 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8132BD9BDD900553846 /* ProductCardView.swift */; };
 		D718D8172BD9D07100553846 /* ItemDetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8162BD9D07100553846 /* ItemDetailViews.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7166B2C2BF59F21004C1357 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		D718D8112BD9AFFD00553846 /* EventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoModel.swift; sourceTree = "<group>"; };
 		D718D8132BD9BDD900553846 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		D718D8162BD9D07100553846 /* ItemDetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViews.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				D718D8132BD9BDD900553846 /* ProductCardView.swift */,
 				D718D8182BD9EB4900553846 /* CarProductsView.swift */,
 				D718D81C2BD9F1D100553846 /* CarView.swift */,
+				D7166B2C2BF59F21004C1357 /* SlidersView.swift */,
 				D718D82A2BDA250F00553846 /* EventList.swift */,
 			);
 			path = Details;
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D718D82B2BDA250F00553846 /* EventList.swift in Sources */,
+				D7166B2D2BF59F21004C1357 /* SlidersView.swift in Sources */,
 				D718D8142BD9BDD900553846 /* ProductCardView.swift in Sources */,
 				D718D81D2BD9F1D100553846 /* CarView.swift in Sources */,
 				D718D8242BDA10AF00553846 /* CarItemView.swift in Sources */,

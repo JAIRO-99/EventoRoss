@@ -13,33 +13,37 @@ struct CategoriesView1: View {
     
     var body: some View {
         NavigationStack{
-            ZStack {
-                Color(red: 100.937, green: 0.937, blue: 0.937)
+            ZStack{
+                Color(Color(red: 1.000, green: 0.937, blue: 0.937))
                     .edgesIgnoringSafeArea(.all)
-                    
-                List{
-                    ForEach(Category.allCases){category in
-                        NavigationLink{
-                            ScrollView{
-                                
-                                EventList(product: product.filter{$0.category == category.rawValue})
-                                    .foregroundColor(.black)
+                ScrollView{
+                    VStack(alignment: .leading){
+                        ForEach(Category.allCases){category in
+                            HStack{
+                                NavigationLink{
+                                    EventList(product: product.filter{$0.category == category.rawValue})
+                                        .foregroundColor(.black)
                                     
+                                        .navigationTitle(category.rawValue)
+                                }label: {
+                                    Label(category.rawValue, systemImage: "chevron.right")
+                                        .font(.headline)
+                                        
+                                }
                             }
-                            .navigationTitle(category.rawValue)
-                        }label: {
-                            Text(category.rawValue)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 50)
+                            .background(.white)
+                            .padding(.horizontal)
                         }
-                        
                     }
+                    .padding(.top)
+                    
                 }
-                
             }
             .navigationTitle("Categorias")
-            .background(Color(red: 100.937, green: 0.937, blue: 0.937))
-            
         }
-      
     }
 }
 

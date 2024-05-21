@@ -9,26 +9,28 @@ import Foundation
 import SwiftUI
 import SwiftData
 
-enum Category: String, CaseIterable, Identifiable {
-    var id: String { self.rawValue }
-    case niñas = "Niñas"
-    case niños = "Niños"
-    case babyShower = "Baby Shower"
-    case revelacionDeSexo = "Revelación de Sexo"
-    case quinceAños = "15 Años"
-    case dieciochoAños = "18 Años"
-    case cincuentaAños = "50 Años"
-}
 
+//@Model
 struct EventoModel: Identifiable{
     
-    let id = UUID()
+     let id = UUID()
     let name: String
     let descriptions: String
     let precio: Double
     let image: String
     var car: Bool
     let category: Category.RawValue
+    
+    /*
+    init(name: String, descriptions: String, precio: Double, image: String, car: Bool, category: Category.RawValue) {
+        self.name = name
+        self.descriptions = descriptions
+        self.precio = precio
+        self.image = image
+        self.car = car
+        self.category = category
+    }
+    */
     
     static var example = EventoModel( name: "Decoración Minnie", descriptions: "La mejor decoración de Minnie", precio: 180.00, image: "decoracion_1", car: false, category: "Niñas")
 
@@ -45,6 +47,16 @@ struct EventoModel: Identifiable{
     ]
 }
 
+enum Category: String, CaseIterable, Identifiable {
+    var id: String { self.rawValue }
+    case niñas = "Niñas"
+    case niños = "Niños"
+    case babyShower = "Baby Shower"
+    case revelacionDeSexo = "Revelación de Sexo"
+    case quinceAños = "15 Años"
+    case dieciochoAños = "18 Años"
+    case cincuentaAños = "50 Años"
+}
 
 
 let itemsPopular: [EventoModel] = [
@@ -63,3 +75,4 @@ let itemsBest: [EventoModel] = [
     EventoModel( name: "Decoración Vaca Lola", descriptions: "La unica vaca lechera", precio: 220.00, image: "decoracion_5", car: false, category: "Niños"),
     EventoModel( name: "Decoración 15 Años", descriptions: "Para tu princesa", precio: 230.00, image: "decoracion_6", car: false, category: "15 Años")
 ]
+

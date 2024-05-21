@@ -19,6 +19,7 @@ struct CarView: View {
                 .frame(width: 60, height: 60)
                 .background(.gray)
                 .cornerRadius(10)
+                .padding(.horizontal)
             
             VStack(alignment: .leading, spacing: 10){
                 Text(products.name)
@@ -33,16 +34,17 @@ struct CarView: View {
             Image(systemName: "trash")
                     .foregroundColor(.red)
                     .font(.title2)
+                    .padding(.horizontal)
                     .onTapGesture {
                         viewModel.deleteItem(product: products)
                     }
             
         }
+        Divider()
         .padding(.horizontal)
        // .background(.white)
         .cornerRadius(12)
-        .frame(width: .infinity)
-        .padding()
+        
     }
 }
 

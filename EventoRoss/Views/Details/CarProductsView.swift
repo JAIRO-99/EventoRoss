@@ -35,7 +35,7 @@ struct CarProductsView: View {
                     .padding()
                     .frame(maxWidth: .infinity)
                     .frame(height: 40)
-                    .background(.brown.opacity(0.3))
+                    .background(Color("brownOpacity"))
                     
                 
                 }else{
