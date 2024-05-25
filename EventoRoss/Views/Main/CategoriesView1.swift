@@ -21,9 +21,9 @@ struct CategoriesView1: View {
                         ForEach(Category.allCases){category in
                             HStack{
                                 NavigationLink{
+                                    
                                     EventList(product: product.filter{$0.category == category.rawValue})
                                         .foregroundColor(.black)
-                                    
                                         .navigationTitle(category.rawValue)
                                 }label: {
                                     Label(category.rawValue, systemImage: "chevron.right")

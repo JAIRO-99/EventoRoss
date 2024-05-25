@@ -26,6 +26,8 @@ struct CarView: View {
                     .font(.headline)
                 
                 Text("$ \(products.precio, specifier: "%.2f")")
+                
+               
             }
             
             Spacer()
