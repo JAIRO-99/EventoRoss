@@ -27,6 +27,7 @@ struct TabBar: View {
                 .tabItem {
                     Label("Carrito", systemImage: "cart")
                 }
+                .badge(viewModel.eventos.count)
                 
                 
             UserView()

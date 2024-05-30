@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3C8CFE2C026B58002670D2 /* EventoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C8CFC2C026B58002670D2 /* EventoData.xcdatamodeld */; };
 		D7166B2D2BF59F21004C1357 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7166B2C2BF59F21004C1357 /* SlidersView.swift */; };
 		D718D8122BD9AFFD00553846 /* EventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8112BD9AFFD00553846 /* EventoModel.swift */; };
 		D718D8142BD9BDD900553846 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718D8132BD9BDD900553846 /* ProductCardView.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B3C8CFD2C026B58002670D2 /* EventoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventoData.xcdatamodel; sourceTree = "<group>"; };
 		D7166B2C2BF59F21004C1357 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		D718D8112BD9AFFD00553846 /* EventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoModel.swift; sourceTree = "<group>"; };
 		D718D8132BD9BDD900553846 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D718D81A2BD9EFD600553846 /* EventoViewModel.swift */,
+				9B3C8CFC2C026B58002670D2 /* EventoData.xcdatamodeld */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				D7D24ABB2BC909B80002158A /* ContentView.swift in Sources */,
 				D7D24AB92BC909B80002158A /* EventoRossApp.swift in Sources */,
 				D718D8172BD9D07100553846 /* ItemDetailViews.swift in Sources */,
+				9B3C8CFE2C026B58002670D2 /* EventoData.xcdatamodeld in Sources */,
 				D718D8222BDA108000553846 /* CategoriesView1.swift in Sources */,
 				D718D81F2BDA105900553846 /* TabBar.swift in Sources */,
 				D718D8192BD9EB4900553846 /* CarProductsView.swift in Sources */,
@@ -448,6 +452,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B3C8CFC2C026B58002670D2 /* EventoData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B3C8CFD2C026B58002670D2 /* EventoData.xcdatamodel */,
+			);
+			currentVersion = 9B3C8CFD2C026B58002670D2 /* EventoData.xcdatamodel */;
+			name = EventoData.xcdatamodeld;
+			path = /Users/jairolaurente/Documents/Swift/EventoRoss/EventoRoss/ViewModel/EventoData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D7D24AAD2BC909B80002158A /* Project object */;
 }

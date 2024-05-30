@@ -90,25 +90,21 @@ struct UserView: View {
                                     .font(.title2)
                                 
                                 HStack{
-                                    Button{
-                                        
-                                    }label: {
+                                    Link(destination: URL(string: "https://wa.me/qr/HKGZW66SU6XFI1")!, label: {
                                         Image("wsp")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 50)
-                                    }
-                                   
+                                    })
                                     Divider()
-                                    
-                                    Button{
-                                        
-                                    }label: {
-                                        Image("ig")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 50)
-                                    }
+                                  
+                                    Link(destination: URL(string: "https://www.instagram.com/rossanamunozeventosmagicos/")!, label: {
+                                            Image("ig")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 50)
+                                        })
+                                   
                                     
                                 }
                             }
@@ -126,77 +122,6 @@ struct UserView: View {
                 .ignoresSafeArea(.container, edges: .top)
             }
         }
-        /*
-        NavigationView {
-            ZStack{
-                Color("piel")
-                    .edgesIgnoringSafeArea(.all)
-                
-                VStack {
-                    Form{
-                     
-                        Image("logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 300)
-                            .overlay(
-                                Circle()
-                                    .stroke(.black, lineWidth: 1)
-                            )
-                            .clipShape(Circle())
-                            .padding(.top)
-                        Section("Usuario"){
-                            Text("Rossana Muñoz")
-                        }
-                        Section("Número de Celular"){
-                            Text("992 378 749")
-                        }
-                        Section("Estadísticas"){
-                            HStack{
-                                VStack(alignment: .center){
-                                    Text("+ 123")
-                                        .font(.title)
-                                        .foregroundColor(.blue)
-                                    Text("Decoraciones")
-                                        .font(.caption)
-                                }
-                                Spacer()
-                                Divider()
-                                Spacer()
-                                VStack(alignment: .center){
-                                    Text("+102")
-                                        .font(.title)
-                                        .foregroundColor(.blue)
-                                    Text("Usuarios")
-                                        .font(.caption)
-                                }
-                                Spacer()
-                                Divider()
-                                Spacer()
-                                VStack(alignment: .center){
-                                    HStack(spacing: 2){
-                                        Image(systemName: "star")
-                                            .font(.title2)
-                                            .foregroundColor(.blue)
-                                            
-                                        Text("58")
-                                            .font(.title)
-                                            .foregroundColor(.blue)
-                                    }
-                                        Text("Favoritos")
-                                        .font(.caption)
-                                }
-                                }
-                        }
-                    }
-                }
-               
-            }
-        
-        .navigationTitle("Usuario")
-        //.navigationBarTitleDisplayMode(.inline)
-        }
-      */
     }
 }
 

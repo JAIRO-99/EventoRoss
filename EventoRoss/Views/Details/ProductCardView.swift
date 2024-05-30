@@ -47,7 +47,7 @@ struct ProductCardView: View {
                     Button{
                         viewModel.addCart(item: product)
                     }label: {
-                        Image(systemName: "cart")
+                        Image(systemName: "plus")
                             .padding()
                             .foregroundColor(.blue)
                             .background(Color(red: 100.937, green: 0.937, blue: 0.937))
