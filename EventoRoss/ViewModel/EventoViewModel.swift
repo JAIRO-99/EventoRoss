@@ -5,7 +5,7 @@
 //  Created by Jairo Laurente Celis on 24/04/24.
 //
 
-// CON ESTE TRABAJAR PARA AGREGAR COREDATA , ESTA OK LA APP
+
 import Foundation
 import SwiftUI
 import CoreData
