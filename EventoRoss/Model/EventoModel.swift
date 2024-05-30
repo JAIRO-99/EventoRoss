@@ -11,9 +11,9 @@ import CoreData
 
 
 
-struct EventoModel: Identifiable{
+struct EventoModel: Identifiable, Codable{
     
-     let id = UUID()
+    let id: UUID
     let name: String
     let descriptions: String
     let precio: Double
@@ -21,6 +21,15 @@ struct EventoModel: Identifiable{
     var car: Bool
     let category: Category.RawValue
     
+    init(id: UUID = UUID(), name: String, descriptions: String, precio: Double, image: String, car: Bool, category: Category.RawValue) {
+        self.id = id
+        self.name = name
+        self.descriptions = descriptions
+        self.precio = precio
+        self.image = image
+        self.car = car
+        self.category = category
+    }
     
     
     static var example = EventoModel( name: "Decoración Minnie", descriptions: "La mejor decoración de Minnie", precio: 180.00, image: "decoracion_1", car: false, category: "Niñas")
