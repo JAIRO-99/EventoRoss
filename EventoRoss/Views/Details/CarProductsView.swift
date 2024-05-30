@@ -43,7 +43,7 @@ struct CarProductsView: View {
                     Spacer()
                     VStack(){
                         
-                        Text("Aún no tienes productos")
+                        Text("Aún no tienes Favoritos")
                             .bold()
                     }
                     .padding()
@@ -57,7 +57,7 @@ struct CarProductsView: View {
             }
             
             }
-            .navigationTitle("Carrito")
+            .navigationTitle("Favoritos")
         }
         }
 }

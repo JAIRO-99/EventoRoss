@@ -12,7 +12,6 @@ struct ContentView: View {
     
     @StateObject var viewModel = EventoViewModel()
     
-    let tabIcons = ["house","heart","cart","person"]
     @State var indexSelectedIcons = 0
     
     var body: some View {

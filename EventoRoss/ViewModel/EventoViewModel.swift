@@ -8,19 +8,20 @@
 // CON ESTE TRABAJAR PARA AGREGAR COREDATA , ESTA OK LA APP
 import Foundation
 import SwiftUI
-import SwiftData
+import CoreData
 
-@Observable
+
 final class EventoViewModel: ObservableObject{
     
+
     
     private (set)var eventos: [EventoModel] = []
     private (set)var totalPrice = 0.0
     
     init(){
         eventos = decodeAllEventos()
-    }
-    
+    }   
+
     @MainActor
     func addCart(item: EventoModel){
         if !eventos.contains(where: { model in

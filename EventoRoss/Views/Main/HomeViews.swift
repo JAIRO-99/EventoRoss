@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeViews: View {
     
     @EnvironmentObject var viewModel: EventoViewModel
-    @State private var searchDecoracion = ""
+    //@State private var searchDecoracion = ""
     
     @State private var selectedIndex = 0
     var decorations = ["All", "Niñas", "Niños", "Baby Shower", "Revelación de Sexo", "15 Años","18 Años","50 Años"]
@@ -27,6 +27,7 @@ struct HomeViews: View {
                     VStack(alignment: .leading){
                         
                         HStack{
+                      
                             Button{
                                 
                             }label: {
@@ -60,12 +61,12 @@ struct HomeViews: View {
                         .foregroundColor(.brown)
                         .padding()
                         
-                        // Desde aquí hasta
+                     
                         
                         HStack{
                             Image(systemName: "magnifyingglass")
                             
-                            TextField("Buscar decoración", text: $searchDecoracion)
+                            TextField("Buscar decoración", text: $viewModel.searchEventos)
                         }
                         .padding()
                         .overlay(
@@ -90,7 +91,7 @@ struct HomeViews: View {
                         }
                         
                         SlidersView()
-                        // HASTA AQUI PARA CAMBIAR
+                        
                         
                         VStack(alignment: .leading){
                             Text("Popular")
